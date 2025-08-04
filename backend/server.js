@@ -22,8 +22,8 @@ const userData = {
 app.get('/api/user', (req, res) => {
   res.json(userData);
 });
+const PORT = process.env.PORT || 5000; // Critical for hosting platforms
 
-const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
