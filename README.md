@@ -30,6 +30,7 @@ This project was collaboratively developed by Rupasri Narava and Bhagya Lakshmi.
 
 - **GitHub Repository**:  
   [https://github.com/RupasriNarava/intern-portal](https://github.com/RupasriNarava/intern-portal)
+  
 
 ## Technologies Used
 
@@ -49,8 +50,7 @@ intern-portal/
 │
 └── README.md
 
-shell
-Copy code
+
 
 ## How to Run Locally
 
