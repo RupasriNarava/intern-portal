@@ -1,29 +1,26 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
+const PORT = process.env.PORT || 5000;
 
+// Enable CORS so frontend can access the backend
 app.use(cors());
-app.use(express.json());
 
-// Mock user data
-const userData = {
-  name: "John Doe",
-  referralCode: "johndoe2025",
-  totalDonations: 1250,
-  rewards: [
-    { id: 1, name: "Bronze Badge", unlocked: true },
-    { id: 2, name: "Silver Badge", unlocked: true },
-    { id: 3, name: "Gold Badge", unlocked: false },
-    { id: 4, name: "Platinum Badge", unlocked: false }
-  ]
-};
-
-// API endpoint to get user data
-app.get('/api/user', (req, res) => {
-  res.json(userData);
+// Dummy API endpoint
+app.get('/api/data', (req, res) => {
+  res.json({
+    name: 'Rupasri Narava',
+    referralCode: 'rupasri2025',
+    donations: 12000
+  });
 });
-const PORT = process.env.PORT || 5000; // Critical for hosting platforms
 
+// Root route for browser check
+app.get('/', (req, res) => {
+  res.send('Backend is running. Visit /api/data for dummy intern info.');
+});
+
+// Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
