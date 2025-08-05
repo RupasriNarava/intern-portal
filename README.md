@@ -1,17 +1,20 @@
 # Intern Fundraising Portal
 
-This is a web application that simulates a fundraising portal for interns. It consists of a frontend built with React and a backend API developed using Node.js and Express. The application is fully deployed and demonstrates a working user interface connected to a mock backend service.
+This web application simulates a referral-based fundraising portal for interns. It features a responsive frontend built using React and a mock backend API developed with Node.js and Express. The portal provides a dashboard interface showing intern details and donation statistics through static and dynamic components.
+
+This project was collaboratively developed by Rupasri Narava and Bhagya Lakshmi.
 
 ## Features
 
-- Login and signup interface (UI only)
+- Login and signup interface (UI only, no authentication)
 - Dashboard displaying:
   - Intern name
-  - Referral code
+  - Unique referral code
   - Total donations raised
-  - Static rewards/unlockables section
-- Backend REST API serving mock intern data
-- Fully deployed frontend and backend with public access
+  - Rewards/unlockables section (static display)
+- Leaderboard section (static content)
+- Backend API returning mock data for the dashboard
+- Fully deployed frontend and backend
 
 ## Screenshot
 
@@ -19,10 +22,10 @@ This is a web application that simulates a fundraising portal for interns. It co
 
 ## Live Demo
 
-- **Frontend**:  
+- **Frontend (Vercel)**:  
   [https://intern-portal-ckb6c4s16-rupasrinaravas-projects.vercel.app](https://intern-portal-ckb6c4s16-rupasrinaravas-projects.vercel.app)
 
-- **Backend API**:  
+- **Backend API (Render)**:  
   [https://intern-portal-xisa.onrender.com/api/data](https://intern-portal-xisa.onrender.com/api/data)
 
 - **GitHub Repository**:  
@@ -46,10 +49,13 @@ intern-portal/
 │
 └── README.md
 
+shell
+Copy code
 
 ## How to Run Locally
 
 ### Frontend
+
 ```bash
 cd frontend
 npm install
@@ -60,3 +66,14 @@ Copy code
 cd backend
 npm install
 node server.js
+Notes
+This application uses static data for demonstration purposes.
+
+Authentication and database integration are not included.
+
+Designed for evaluating frontend-backend structure and deployment.
+
+Contributors
+Rupasri Narava – @RupasriNarava
+
+Bhagya Lakshmi – @bhagyalakshmihub
