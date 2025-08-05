@@ -15,7 +15,7 @@ This is a web application that simulates a fundraising portal for interns. It co
 
 ## Screenshot
 
-![Login Screen](https://github.com/RupasriNarava/intern-portal/raw/main/frontend/public/screenshot.png)
+<img width="603" height="533" alt="intern" src="https://github.com/user-attachments/assets/e4cd5e0e-6015-40e2-888e-ed0b742b6cfa" />
 
 ## Live Demo
 
