@@ -1,26 +1,62 @@
-# Intern Portal Project
+# Intern Fundraising Portal
 
-![Project Screenshot](./screenshots/dashboard.png) <!-- Add later -->
-
-A full-stack intern management system with:
-- React frontend
-- Node.js/Express backend
-- Dashboard functionality
+This is a web application that simulates a fundraising portal for interns. It consists of a frontend built with React and a backend API developed using Node.js and Express. The application is fully deployed and demonstrates a working user interface connected to a mock backend service.
 
 ## Features
-✅ Dummy authentication  
-✅ Referral code system  
-✅ Donations tracking  
-✅ Rewards system  
 
-## Setup
+- Login and signup interface (UI only)
+- Dashboard displaying:
+  - Intern name
+  - Referral code
+  - Total donations raised
+  - Static rewards/unlockables section
+- Backend REST API serving mock intern data
+- Fully deployed frontend and backend with public access
+
+## Screenshot
+
+![Login Screen](https://github.com/RupasriNarava/intern-portal/raw/main/frontend/public/screenshot.png)
+
+## Live Demo
+
+- **Frontend**:  
+  [https://intern-portal-ckb6c4s16-rupasrinaravas-projects.vercel.app](https://intern-portal-ckb6c4s16-rupasrinaravas-projects.vercel.app)
+
+- **Backend API**:  
+  [https://intern-portal-xisa.onrender.com/api/data](https://intern-portal-xisa.onrender.com/api/data)
+
+- **GitHub Repository**:  
+  [https://github.com/RupasriNarava/intern-portal](https://github.com/RupasriNarava/intern-portal)
+
+## Technologies Used
+
+- **Frontend**: React, HTML, CSS, JavaScript
+- **Backend**: Node.js, Express
+- **Hosting**: Vercel (frontend), Render (backend)
+
+## Project Structure
+
+intern-portal/
+├── frontend/ # React frontend
+│ └── src/
+│ └── components/
+│
+├── backend/ # Node.js backend with Express
+│ └── server.js
+│
+└── README.md
+
+
+## How to Run Locally
+
+### Frontend
 ```bash
-# Backend
+cd frontend
+npm install
+npm start
+Backend
+bash
+Copy code
 cd backend
 npm install
-npm start
-
-# Frontend 
-cd ../frontend
-npm install
-npm start
+node server.js
